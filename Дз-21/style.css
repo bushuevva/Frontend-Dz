@@ -1,0 +1,65 @@
+.but1{
+    background-color: rgb(170, 213, 244);
+    padding: 5% 40%;
+    align-items: center;
+}
+.but2{
+    background-color: rgb(245, 182, 202);
+    padding: 5% 40%;
+    align-items: center;
+}
+.reg{
+    color: rgb(245, 182, 202);
+}
+.registr{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: rgb(250, 238, 242);
+    padding: 3%;
+}
+.registr div{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+.registr button{
+    text-decoration: none;
+    background-color: rgb(245, 182, 202);
+    padding: 2%;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    left: 545px;
+    top: 35px;
+}
+.avtor{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: rgb(227, 242, 253);
+    padding: 3%;
+}
+.avtor div{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+i{
+    align-self: center;
+}
+.avtor button{
+    text-decoration: none;
+    background-color: rgb(170, 213, 244);
+    padding: 2%;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    left: 650px;
+    top: 35px;
+}
+.avt{
+    color: rgb(170, 213, 244);;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

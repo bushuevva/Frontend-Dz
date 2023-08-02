@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+<body>
+    <main>
+
+        <div class="but1">
+            <a  class="waves-effect waves-light btn modal-trigger pink lighten-4" href="#modal1"> Регистрация</a>
+        </div>
+        <div class="but2">
+            <a  class="waves-effect waves-light btn modal-trigger blue lighten-4" href="#modal2"> Авторизация</a>
+        </div>
+
+
+
+        <!-- -----------------------модальное окно 1----------------------- -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+            <h4 class="reg"> Регистрация</h4>
+            <div class="registr">
+                <div>
+                    <i class="small material-icons">perm_identity</i>
+                    
+                    <input type="text" placeholder="Логин">
+                </div>
+                <div>
+                    <i class="small material-icons">email</i>
+                    
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <div>
+                    <i class="small material-icons">lock_outline</i>
+                    
+                    <input type="password" placeholder="Пароль">
+                </div>
+                <div>
+                    <i class="small material-icons">lock_outline</i>
+                    
+                    <input type="password" placeholder="Повторите пароль">
+                </div>
+                <p>
+                    <button><a href="#">Зарегистрироваться</a></button>
+                </p>
+            </div>
+            </div>
+
+            <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-deep-orange lighten-2 btn-flat">Закрыть</a>
+            </div>
+        </div>
+        <!-- -----------------------модальное окно 2----------------------- -->
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+            <h4 class="avt">Авторизация</h4>
+            <div class="avtor">
+                <div>
+                    <i class="small material-icons">perm_identity</i>
+                    
+                    <input type="text" placeholder="Логин">
+                </div>
+                <div>
+                    <i class="small material-icons">lock_outline</i>
+                    
+                    <input type="password" placeholder="Пароль">
+                </div>
+                <p>
+                    <button><a href="#">Войти</a></button>
+                </p>
+            </div>
+            </div>
+
+            <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-deep-orange lighten-2 btn-flat">Закрыть</a>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('#modal1').modal({
+                dismissible: false,
+                opacity: 0.2,
+                inDuration: 2000,
+                outDuration: 2000,
+            });
+            $('#modal1').modal('close');
+            $('#modal2').modal({
+                dismissible: false,
+                opacity: 0.2,
+                inDuration: 2000,
+                outDuration: 2000,
+            });
+            $('#modal2').modal('close');
+        })
+    </script>
+    
+</body>
