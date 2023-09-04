@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- -------------------Задача № 10------------------- -->
+    <div>
+        <h2>
+            Задача № 9
+        </h2>
+        <p>
+            Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2 балла. После вопросов выведите пользователю количество набранных баллов.
+        </p>
+        <p> 1. Сколько раз можно отнять 5 от 25?</p>
+        <ol>
+            <li>Один раз</li> 
+            <li>Пять раз</li>
+            <li>Бесконечное кол-во раз</li>
+        </ol>
+        <input type="text" class="one" placeholder="Ответ">
+        <p> 2. У Оли есть две сестры. Каждая из сестер имеет по одному брату. Сколько всего детей в семье Оли?</p>
+        <ol>
+            <li>Три</li>
+            <li>Четыре</li>
+            <li>Пять</li>
+        </ol>
+        <input type="text" class="two" placeholder="Ответ">
+        <p> 3. Сколько граней у куба?</p>
+        <ol>
+            <li>Четыре</li>
+            <li>Восемь</li>
+            <li>Шесть</li>
+        </ol>
+        <input type="text" class="three" placeholder="Ответ">
+        <button class="prov">Проверить</button>
+    </div>
+    <br>
+
+
+    <!-- -------------------Задача № 10------------------- -->
+    <div>
+        <h2>
+            Задача № 10
+        </h2>
+        <p>
+            Запросить дату (день, месяц, год) и вывести следующую за ней дату. Учтите возможность перехода на следующий месяц, год, а также високосный год. 
+        </p>
+        <label for="">
+            <p> Введите день</p>
+            <input type="text" placeholder="День" class="day">
+        </label>
+        <label for="">
+            <p> Введите месяц</p>
+            <input type="text" placeholder="Месяц от 1 до 12" class="month">
+        </label>
+        <label for="">
+            <p> Введите год</p>
+            <input type="text" placeholder="Год" class="year">
+        </label>
+        <button class="but"> Вывести </button>
+        <p>
+            Следующая дата:
+        </p>
+        <span class="d_out"></span>
+        <span class="m_out"></span>
+        <span class="y_out"></span>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
