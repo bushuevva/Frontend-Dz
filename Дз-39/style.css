@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+}
+/* ----------------------------------шапка---------------------------------- */
+nav{
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.he1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: center;
+    padding: 2% 4%;
+}
+.he1 p{
+    text-transform: uppercase;
+    align-self: center;
+    color: rgb(11, 53, 159);
+    font-size: 16pt;
+}
+.he1 img{
+    width: 120px;
+    height: 120px;
+
+}
+.he2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-self: center;
+}
+.sunn{
+    display: flex;
+    flex-direction: row;
+}
+.sun{
+    width: 40px;
+    height: 40px;
+}
+.he3{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-self: center;
+    padding: 2% 4%;
+}
+.he3 a:nth-child(1){
+    text-align: center;
+}
+.he3 img{
+    width: 50px;
+    height: 50px;
+}
+.he3 div{
+    align-self: center;
+}
+a{
+    text-decoration: none;
+    font-size: 13pt;
+    color: rgb(11, 53, 159);
+}
+a:hover{
+    color: rgb(9, 45, 137);
+}
+button{
+    background-color: rgb(245, 224, 88);
+    border: 2px dotted rgb(211, 193, 75);
+    cursor: pointer;
+}
+/* ----------------------------------animals---------------------------------- */
+.anim{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+.anim div:nth-child(1){
+    background-color: rgb(211, 193, 75);
+}
+.anim div{
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    background-color: rgb(71, 151, 46);
+    cursor: pointer;
+    color: white;
+}
+.anim img{
+    width: 100px;
+}
+
+/* ----------------------------------картинки---------------------------------- */
+.photo {
+    display: flex;
+    justify-content: center;
+}
+.gallery {
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.big {
+    width: 600px;
+    height: 500px;
+}
+.big img {
+    width: 100%;
+    height: 100%;
+}
+.small {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.small a{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: rgb(11, 53, 159);
+}
+.small a img {
+    border: none;
+    width: 100px;
+    height: 80px;
+}
+
+/* ----------------------------------модальное окно 1---------------------------------- */
+.forma{
+    background-color:rgb(159, 196, 196);
+    width: 60%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-row-gap:1%;
+    margin: auto;
+    padding: 6% 3% 0 3%;
+    border-radius: 20px;
+    overflow: hidden; 
+    display: none;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 1000px;
+	padding: 40px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 10px 10px 30px rgb(180, 179, 179);
+}
+/* ---------1 блок--------- */
+.block1{
+    padding: 1% 2%;
+}
+.block1 input{
+    background-color:rgb(168, 209, 209);
+    border: none;
+    border-bottom: 2px solid rgb(66, 113, 113);
+    padding: 3% 2%;
+    width: 80%;  
+}
+.block1 input::placeholder{
+    color: rgb(96, 153, 153);
+    font-size: 12pt;
+}
+.block1 div, .block2 div, .block3 div{
+    color: rgb(66, 113, 113);
+}
+/* ---------2 блок--------- */
+.block2{
+    padding: 1% 2%;
+}
+.block2 input{
+    background-color:rgb(168, 209, 209);
+    border: none;
+    border-bottom: 2px solid rgb(66, 113, 113);
+    padding: 3% 2%;
+    width: 80%;
+}
+.block2 input::placeholder{
+    color: rgb(96, 153, 153);
+    font-size: 12pt;
+}
+/* ---------3 блок--------- */
+.block3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1%; 
+    width: 80%;
+    padding: 1% 2%;
+}
+.block3 input{
+    background-color:rgb(168, 209, 209);
+    border: none;
+    border-bottom: 2px solid rgb(66, 113, 113);
+    padding: 7% 7%;
+    box-sizing: border-box;
+    width: 80%;
+}
+.block3 input::placeholder{
+    color: rgb(96, 153, 153);
+    font-size: 12pt;
+}
+.god{
+    padding-top: 29%;
+}
+.menu{
+    cursor: pointer;
+    align-self: center;
+    align-content: end;
+    display: none;
+}
+.menu img{
+    width: 50px;
+}
+.forma .close-mdl1{
+    width: 23px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+}
+/* ----------------------------------модальное окно 2---------------------------------- */
+.modal2{
+    padding: 10px;
+    border: 1px solid green;
+    background-color: rgb(125, 184, 125);
+    width: 50%;
+    height: 40%;
+    margin: auto;
+
+    display: none;
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 1000px;
+	padding: 40px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 10px 10px 30px rgb(180, 179, 179);
+}
+.modal2 h3{
+    font-size: 15pt;
+}
+.modal2 input, .modal2 .sel{
+    background-color: rgb(157, 216, 157);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.modal2 .close-mdl2{
+    width: 23px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+}
+.f-name{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.info{
+    display: flex;
+    gap: 20px;
+}
+.button2{
+    background-color: rgb(102, 153, 102);
+    color: white;
+    font-size: 15pt;
+    padding: 5px;
+    margin-top: 10%;
+    border: 1px solid rgb(80, 121, 80);
+}
+
+@media screen and (max-width: 600px) {
+    .he2, .he3{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30%;
+    }
+    .he2{
+        position: absolute;
+        top: 120px;
+        right: 0;
+        padding: 20px;
+        background-color: rgb(172, 227, 167);
+    }
+    .he3{
+        position: absolute;
+        top: 180px;
+        right: 0;
+        padding: 20px;
+        background-color: rgb(172, 227, 167);
+    }
+
+}
